@@ -1,0 +1,124 @@
+/* Login Container */
+.login-container {
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8fafc; /* Light gray background */
+}
+
+/* Form Container */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+/* Login Form Styling */
+.form-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 40px 30px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.form-card h2, .form-card h3 {
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 0.5rem 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background: #f8fafc;
+  transition: all 0.3s ease;
+}
+
+.form-card input:focus {
+  border-color: #667eea;
+  background: #ffffff;
+  transform: scale(1.02);
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Interactive Button */
+.form-card button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  box-shadow: 0 4px 6px rgba(102, 126, 234, 0.1);
+}
+
+.form-card button:hover {
+  background: linear-gradient(135deg, #5a67d8, #6a3093);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 14px rgba(102, 126, 234, 0.2);
+}
+
+.form-card button:active {
+  transform: translateY(0);
+}
+
+/* Link Styling */
+.link {
+  margin-top: 1.5rem;
+  color: #4a5568;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #667eea;
+  cursor: pointer;
+  font-size: 0.95rem;
+  padding: 0;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.link-button:hover {
+  color: #5a67d8;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Error Styling (Optional) */
+.error-message {
+  color: #e53e3e;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.form-card input.error {
+  border-color: #e53e3e;
+  background-color: #fff5f5;
+}

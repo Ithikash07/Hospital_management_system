@@ -1,0 +1,33 @@
+/* FAQ.css */
+
+.faq-container {
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .faq-container h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .faq-container p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .faq-container strong {
+    color: #1a73e8;
+  }
+
+
+  .img-hos {
+    width: 100%;
+    max-width: 800px; /* or any desired size */
+    height: auto;      /* keeps aspect ratio */
+    display: block;
+    margin: 40px auto; /* centers the image horizontally */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

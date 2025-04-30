@@ -1,0 +1,150 @@
+.user-dropdown-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .user-profile-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #2a7fba;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  /* Dropdown Box */
+  .dropdown-content {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 10px);
+    min-width: 280px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    overflow: hidden;
+    padding: 8px 0;
+  }
+  
+  /* Common item styles */
+  .dropdown-item {
+    width: 90%;
+    margin: 6px auto;
+    padding: 12px 16px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  
+  .dropdown-item:hover {
+    background-color: #edf2fa;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  
+  /* Login Button */
+  .dropdown-item.login {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+  }
+  
+  /* Signup Button */
+  .dropdown-item.signup {
+    background-color: #6c63ff;
+    color: white;
+  }
+  
+  .dropdown-item.signup:hover {
+    background-color: #574fe3;
+    color: white;
+  }
+  
+  /* Logout button */
+  .logout {
+    color: #e53935;
+    font-weight: 600;
+  }
+  
+  .logout .item-icon {
+    color: #e53935;
+  }
+  
+  /* Icons */
+  .item-icon {
+    font-size: 1.3rem;
+    min-width: 20px;
+    color: inherit;
+  }
+  
+  /* Dropdown header */
+  .dropdown-header {
+    padding: 1.2rem;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .header-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #2a7fba;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .header-info h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .header-info p {
+    margin: 0.2rem 0 0;
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  .dropdown-divider {
+    height: 1px;
+    background-color: #eee;
+    margin: 0.4rem 0;
+  }
+
+
+  .dropdown-item.login:hover {
+    background-color: #f0f0f0;
+    color: #333;
+    border-color: #bbb;
+  }
