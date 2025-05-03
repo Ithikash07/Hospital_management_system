@@ -1,0 +1,156 @@
+/* Emergency.css */
+
+/* Background Image with Overlay */
+.emergency-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.emergency-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('../imgs/emergency.webp') no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add a subtle animation to the background */
+.emergency-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(211, 47, 47, 0.1);
+  animation: pulse 15s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { background-color: rgba(211, 47, 47, 0.1); }
+  100% { background-color: rgba(211, 47, 47, 0.05); }
+}
+
+/* Custom Card Styles */
+.card {
+  border-radius: 15px !important;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Icon Circle */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.hover-effect:hover .icon-circle {
+  background-color: rgba(220, 53, 69, 0.2) !important;
+  transform: scale(1.1);
+}
+
+/* Procedure List Styling */
+.procedure-list .list-group-item {
+  background-color: transparent;
+  padding-left: 0;
+}
+
+.step-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+/* Button Animation */
+.btn-danger {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(220, 53, 69, 0.4);
+}
+
+.btn-danger::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.btn-danger:hover::after {
+  left: 100%;
+  opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .emergency-hero {
+    height: 300px;
+  }
+  
+  .emergency-hero h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  .emergency-hero p {
+    font-size: 1.1rem !important;
+  }
+  
+  .card-body {
+    padding: 2rem !important;
+  }
+}
+
+/* Animation for elements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.emergency-hero h1 {
+  animation: fadeInUp 0.8s ease;
+}
+
+.emergency-hero p {
+  animation: fadeInUp 1s ease;
+}
+
+.card {
+  animation: fadeInUp 0.5s ease;
+  animation-fill-mode: both;
+}
+
+/* Delay animations for cards */
+.card:nth-child(1) { animation-delay: 0.2s; }
+.card:nth-child(2) { animation-delay: 0.4s; }
