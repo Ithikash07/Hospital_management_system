@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import '/Users/ithikash/Documents/HOSPITAL MANAGEMENT SYSTEM/hospital/src/assets/css/Login.css';
+import '../assets/css/Login.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showForgot, setShowForgot] = useState(false);
   const [forgotEmail, setForgotEmail] = useState('');
-  const [name,setName]=useState('');
 
   useEffect(() => {
     document.body.classList.add('login-background');

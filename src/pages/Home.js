@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import '../assets/css/Home.css';
-import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // Images
 import hospital1 from '../assets/imgs/hospital1.jpg';

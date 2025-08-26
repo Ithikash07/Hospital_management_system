@@ -20,10 +20,10 @@ const Footer = () => {
             Providing exceptional healthcare with cutting-edge technology and compassionate care since 1985.
           </p>
           <div className="footer-social">
-            <a href="#"><i className="fab fa-facebook-f"></i></a>
-            <a href="#"><i className="fab fa-twitter"></i></a>
-            <a href="#"><i className="fab fa-instagram"></i></a>
-            <a href="#"><i className="fab fa-linkedin-in"></i></a>
+            <a href="https://facebook.com"><i className="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com"><i className="fab fa-twitter"></i></a>
+            <a href="https://instagram.com"><i className="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com"><i className="fab fa-linkedin-in"></i></a>
           </div>
         </div>
 
