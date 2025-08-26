@@ -6,7 +6,6 @@ import dolo from '../assets/imgs/dolo.avif';
 import cet from '../assets/imgs/cet.webp';
 import ibu from '../assets/imgs/ibu.jpg';
 import para from '../assets/imgs/parac.webp';
-import Footer from '../components/Footer';
 
 const MedicineList = () => {
   const [medicines] = useState([

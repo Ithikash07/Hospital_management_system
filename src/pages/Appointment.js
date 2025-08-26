@@ -44,7 +44,7 @@ const Appointment = () => {
       alert('Please login to book an appointment!');
       navigate('/login'); // redirect to login
     }
-  }, []);
+  }, [navigate]);
   
 
   return (

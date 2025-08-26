@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // ✅ Import useNavigate
 import '../assets/css/contact.css';
-import Footer from '../components/Footer';
 
 const ContactUs = () => {
   const navigate = useNavigate(); // ✅ Initialize navigate
